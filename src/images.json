@@ -1,0 +1,338 @@
+{
+ "heroGolf": {
+  "base": "/images/hero/sun-city-golf-course-homes-mountain-view",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 824,
+  "alt": "Golf course homes with mountains on the horizon in the West Valley"
+ },
+ "homesHills": {
+  "base": "/images/local/single-level-homes-along-the-fairway",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 837,
+  "alt": "Single-level homes beside a green fairway with mountains beyond"
+ },
+ "golfPalms": {
+  "base": "/images/local/palm-lined-fairway-arizona",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Palm-lined fairway on a sunny Arizona day"
+ },
+ "roofsAerial": {
+  "base": "/images/local/aerial-view-of-tile-roof-neighborhood",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1248,
+  "alt": "Aerial view of a tile-roof neighborhood with curving streets"
+ },
+ "golfCart": {
+  "base": "/images/garage/golf-cart-on-glossy-coated-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Golf cart parked on a glossy coated garage floor"
+ },
+ "flakeGarage": {
+  "base": "/images/garage/bright-garage-with-gray-flake-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Bright garage with white doors and a gray decorative flake floor"
+ },
+ "garageStorage": {
+  "base": "/images/garage/organized-garage-storage-and-workbench",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Organized garage with storage shelving and a workbench"
+ },
+ "garageGym": {
+  "base": "/images/garage/home-gym-in-coated-garage",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1064,
+  "alt": "Home gym set up in a garage with a coated floor"
+ },
+ "evHome": {
+  "base": "/images/garage/electric-car-charging-at-home-garage",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Homeowner charging an electric car outside the garage"
+ },
+ "flakeGrey": {
+  "base": "/images/flake/gray-white-and-black-flake-blend",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1457,
+  "alt": "Gray, white and black decorative flake blend close-up"
+ },
+ "metalSilver": {
+  "base": "/images/metallic/silver-and-white-metallic-swirl",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 3311,
+  "alt": "Silver and white metallic epoxy swirl texture"
+ },
+ "kitchenMarble": {
+  "base": "/images/residential/open-kitchen-with-marble-look-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1468,
+  "alt": "Open kitchen with a glossy marble-look floor"
+ },
+ "laundry": {
+  "base": "/images/residential/laundry-room-with-seamless-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1400,
+  "alt": "Laundry room with a seamless light floor"
+ },
+ "mudroom": {
+  "base": "/images/residential/mudroom-entry-with-durable-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Mudroom entry with built-in cubbies and a durable floor"
+ },
+ "livingWindows": {
+  "base": "/images/residential/bright-living-room-light-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Bright living room with large windows and a light floor"
+ },
+ "poolside": {
+  "base": "/images/patio/poolside-lounge-on-coated-deck",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 2514,
+  "alt": "Poolside lounge chair on a light coated deck"
+ },
+ "patioGray": {
+  "base": "/images/patio/gray-patio-with-outdoor-seating",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1467,
+  "alt": "Gray patio with modern outdoor seating"
+ },
+ "poolDeck": {
+  "base": "/images/patio/resort-pool-deck-with-loungers",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Pool deck lined with loungers and umbrellas"
+ },
+ "firePatio": {
+  "base": "/images/patio/covered-patio-with-fire-pit",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Covered patio with a fire pit and red chairs"
+ },
+ "cactiWall": {
+  "base": "/images/local/desert-cacti-against-white-wall",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600,
+   2200
+  ],
+  "w": 2200,
+  "h": 1420,
+  "alt": "Columnar cacti against a white courtyard wall"
+ },
+ "crewPrimer": {
+  "base": "/images/process/rolling-primer-coat-on-concrete",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Installer rolling a primer coat across concrete"
+ },
+ "crewSpikes": {
+  "base": "/images/process/installer-in-spiked-shoes-on-wet-coating",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 874,
+  "alt": "Installer wearing spiked shoes on a wet coating"
+ },
+ "crewPour": {
+  "base": "/images/process/spreading-self-leveling-coating",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1068,
+  "alt": "Installer spreading a self-leveling floor coating"
+ },
+ "clinic": {
+  "base": "/images/commercial/clinic-hallway-seamless-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1200,
+  "alt": "Clinic hallway with a seamless easy-clean floor"
+ },
+ "restKitchen": {
+  "base": "/images/commercial/kitchen-with-gray-coated-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1067,
+  "alt": "Kitchen space with a gray coated concrete floor"
+ },
+ "autoShop": {
+  "base": "/images/commercial/auto-repair-shop-with-lift",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1066,
+  "alt": "Auto repair shop with a vehicle on a lift"
+ },
+ "warehouseModern": {
+  "base": "/images/industrial/bright-modern-warehouse-floor",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 1067,
+  "alt": "Bright modern warehouse with a smooth coated floor"
+ }
+}

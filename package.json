@@ -1,0 +1,13 @@
+{
+  "name": "suncityepoxyflooring",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sun City Epoxy Flooring — static site + Cloudflare Worker",
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "dev": "npm run build && npx wrangler dev",
+    "deploy": "npm run build && npx wrangler deploy"
+  },
+  "engines": { "node": ">=18" }
+}

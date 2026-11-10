@@ -1,0 +1,16 @@
+{
+  // Cloudflare Workers config for suncityepoxyflooring.com
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "suncityepoxyflooring",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-09-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "observability": { "enabled": true }
+  // Custom domains are attached in the Cloudflare dashboard (Worker → Settings → Domains & Routes):
+  //   suncityepoxyflooring.com and www.suncityepoxyflooring.com
+}
