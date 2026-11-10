@@ -10,7 +10,7 @@ export const site = {
   geo: { lat: 33.5975, lng: -112.2718 },
   mapQuery: 'Sun City, AZ 85351',
   hours: 'Monday–Saturday · 7:00am–5:00pm',
-  ogImage: '/images/hero/sun-city-golf-course-homes-mountain-view-1200.webp',
+  ogImage: '/images/hero/golf-course-homes-with-mountain-view-1200.webp',
 };
 
 export const services = [

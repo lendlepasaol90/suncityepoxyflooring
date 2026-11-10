@@ -1,6 +1,6 @@
 {
  "heroGolf": {
-  "base": "/images/hero/sun-city-golf-course-homes-mountain-view",
+  "base": "/images/hero/golf-course-homes-with-mountain-view",
   "widths": [
    480,
    800,
@@ -26,7 +26,7 @@
   "alt": "Single-level homes beside a green fairway with mountains beyond"
  },
  "golfPalms": {
-  "base": "/images/local/palm-lined-fairway-arizona",
+  "base": "/images/local/palm-lined-golf-fairway",
   "widths": [
    480,
    800,
