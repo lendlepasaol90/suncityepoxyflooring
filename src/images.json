@@ -10,7 +10,7 @@
   ],
   "w": 2200,
   "h": 824,
-  "alt": "Golf course homes with mountains on the horizon in the West Valley"
+  "alt": "Golf course homes with desert mountains on the horizon"
  },
  "homesHills": {
   "base": "/images/local/single-level-homes-along-the-fairway",
@@ -36,7 +36,7 @@
   ],
   "w": 2200,
   "h": 1467,
-  "alt": "Palm-lined fairway on a sunny Arizona day"
+  "alt": "Palm-lined fairway on a sunny day"
  },
  "roofsAerial": {
   "base": "/images/local/aerial-view-of-tile-roof-neighborhood",
