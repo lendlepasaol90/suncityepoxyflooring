@@ -1,5 +1,6 @@
 // Static site build: node src/build.mjs  →  writes HTML into ./public
 import fs from 'node:fs';
+import crypto from 'node:crypto';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { site, services } from './site.mjs';
@@ -12,7 +13,20 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const out = path.join(root, 'public');
 const pages = [];
 
+// Cache-busting: replace ?v=… on /assets/ URLs with a hash of the file contents
+const assetHash = {};
+function bust(html) {
+  return html.replace(/(\/assets\/[^"?]+)\?v=[^"]*/g, (m, file) => {
+    if (!assetHash[file]) {
+      const src = path.join(root, 'src', file);
+      assetHash[file] = fs.existsSync(src) ? crypto.createHash('sha1').update(fs.readFileSync(src)).digest('hex').slice(0, 10) : '1';
+    }
+    return `${file}?v=${assetHash[file]}`;
+  });
+}
+
 function write(route, html) {
+  html = bust(html);
   const file = route === '/' ? path.join(out, 'index.html') : route.endsWith('.html') ? path.join(out, route) : path.join(out, route, 'index.html');
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, html);
