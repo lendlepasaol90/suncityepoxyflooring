@@ -1,5 +1,5 @@
 export default {
-  slug: 'metallic-epoxy-flooring',
+  slug: 'metallic-floors',
   title: 'Metallic Epoxy Flooring Sun City AZ | Stone-Look Designer Floors',
   description: 'Metallic epoxy floors in Sun City, AZ — pearlescent, stone-like finishes for dens, entries, home bars and showrooms. Custom colors with UV-protective topcoats.',
   kicker: 'Metallic epoxy flooring · Sun City, AZ',
@@ -120,6 +120,6 @@ export default {
     { q: "Do metallic floors work in the garage?", a: "They can in a climate-controlled showroom garage. For a working garage with dust, grit and hot tires, we usually recommend flake for its durability and ability to hide wear." },
     { q: "Can metallic floors be repaired if damaged?", a: "Small chips in the topcoat can usually be repaired. Because the metallic pattern is unique, deeper damage is harder to blend perfectly, which is why we recommend protective habits like felt pads and rugs in busy areas." },
   ],
-  related: ['residential-epoxy-flooring', 'decorative-flake-flooring', 'commercial-epoxy-flooring'],
+  related: ['interior-floors', 'slip-resistant-flake-floors', 'business-floors'],
   closing: { h2: 'Imagine a floor that feels like art.', p: 'Let’s talk colors and create samples for your space.' },
 };

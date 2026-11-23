@@ -1,5 +1,5 @@
 export default {
-  slug: 'garage-floor-coatings',
+  slug: 'garage-floors',
   title: 'Garage Floor Coatings in Sun City, AZ | Flake & One-Day Systems',
   description: 'Garage floor coatings for Sun City homes — car and golf cart bays, workshops and storage. Diamond-ground prep, flake finishes and UV-stable topcoats. Free estimates.',
   kicker: 'Garage floor coatings · Sun City, AZ',
@@ -96,6 +96,6 @@ export default {
     { q: 'Is the coating safe to walk on in socks or slippers?', a: 'A flake floor has a mild texture that gives good footing. If you often step into the garage in slippers, we can add a fine grit to the topcoat near the house door for extra peace of mind.' },
     { q: 'What colors are available?', a: 'Dozens of flake blends, from soft grays and taupes to warmer desert tones. Sample boards come with us to the estimate, so you can judge colors under your own garage lights.' },
   ],
-  related: ['decorative-flake-flooring', 'polyaspartic-floor-coatings', 'patio-concrete-coatings'],
+  related: ['slip-resistant-flake-floors', 'one-day-floor-coatings', 'patio-coatings'],
   closing: { h2: 'Ready for a garage floor you’re proud of?', p: 'Schedule a free visit and we’ll bring samples, test the concrete and give you a clear written estimate.' },
 };

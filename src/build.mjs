@@ -9,6 +9,9 @@ import { renderHome } from './pages/home.mjs';
 import { renderService } from './pages/service.mjs';
 import { renderAbout, renderAreas, renderContact, renderPrivacy, render404 } from './pages/static.mjs';
 
+// Estimate buttons jump to the page's own form; pages without one link to the contact page.
+const withEst = (html) => { const m = html.match(/<form[^>]*\bid="([^"]+)"/); return html.split('#__EST__').join(m ? `#${m[1]}` : '/contact/'); };
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const out = path.join(root, 'public');
 const pages = [];
@@ -26,7 +29,7 @@ function bust(html) {
 }
 
 function write(route, html) {
-  html = bust(html);
+  html = withEst(bust(html));
   const file = route === '/' ? path.join(out, 'index.html') : route.endsWith('.html') ? path.join(out, route) : path.join(out, route, 'index.html');
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, html);
@@ -40,8 +43,8 @@ for (const s of services) {
   write(`/${s.slug}/`, renderService(mod.default));
 }
 write('/about-us/', renderAbout());
-write('/service-areas/', renderAreas());
-write('/contact-us/', renderContact());
+write('/neighborhoods/', renderAreas());
+write('/contact/', renderContact());
 write('/privacy-policy/', renderPrivacy());
 write('404.html', render404());
 

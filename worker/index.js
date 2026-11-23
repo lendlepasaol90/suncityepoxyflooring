@@ -8,6 +8,21 @@
  *   RESEND_API_KEY + LEAD_TO_EMAIL (+ optional LEAD_FROM_EMAIL)   email delivery through Resend
  * Every submission is also written to the Worker logs.
  */
+// Old URLs from the first launch, permanently moved.
+const REDIRECTS = {
+  "/garage-floor-coatings/": "/garage-floors/",
+  "/residential-epoxy-flooring/": "/interior-floors/",
+  "/decorative-flake-flooring/": "/slip-resistant-flake-floors/",
+  "/metallic-epoxy-flooring/": "/metallic-floors/",
+  "/polyaspartic-floor-coatings/": "/one-day-floor-coatings/",
+  "/patio-concrete-coatings/": "/patio-coatings/",
+  "/commercial-epoxy-flooring/": "/business-floors/",
+  "/polyurea-floor-coatings/": "/one-day-floor-coatings/",
+  "/warehouse-floor-coatings/": "/business-floors/",
+  "/service-areas/": "/neighborhoods/",
+  "/contact-us/": "/contact/"
+};
+
 const SITE = 'Sun City Epoxy Flooring';
 const json = (body, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
@@ -60,7 +75,7 @@ async function handleLead(request, env) {
     return json({ ok: false, error: 'Invalid submission.' }, 400);
   }
   // Honeypot: bots fill hidden fields. Pretend success.
-  if (clean(data.company_website)) return wantsJson ? json({ ok: true }) : Response.redirect(new URL('/contact-us/?sent=1', request.url), 303);
+  if (clean(data.company_website)) return wantsJson ? json({ ok: true }) : Response.redirect(new URL('/contact/?sent=1', request.url), 303);
 
   const errors = validate(data);
   if (Object.keys(errors).length) return json({ ok: false, error: 'Please check the highlighted fields.', fields: errors }, 422);
@@ -81,7 +96,7 @@ async function handleLead(request, env) {
   if (result.configured && result.failed) {
     return json({ ok: false, error: 'We could not send your request right now. Please call us.' }, 502);
   }
-  return wantsJson ? json({ ok: true }) : Response.redirect(new URL('/contact-us/?sent=1', request.url), 303);
+  return wantsJson ? json({ ok: true }) : Response.redirect(new URL('/contact/?sent=1', request.url), 303);
 }
 
 export default {
@@ -92,6 +107,8 @@ export default {
       return Response.redirect(url.toString(), 301);
     }
     if (url.pathname === '/api/lead') return handleLead(request, env);
+    const moved = REDIRECTS[url.pathname] || REDIRECTS[url.pathname + '/'];
+    if (moved) return Response.redirect(new URL(moved + url.search, url.origin).toString(), 301);
     return env.ASSETS.fetch(request);
   },
 };

@@ -17,7 +17,7 @@ const intro = ({ kicker, h1, lead, image, trail }) => `<section class="page-top"
 export function renderAbout() {
   const trail = [{ name: 'Home', url: '/' }, { name: 'About Us', url: '/about-us/' }];
   const body = `<main id="content">
-  ${intro({ kicker: 'About us', h1: 'Floor coatings with patience, care and clear answers.', lead: 'We’re a West Valley floor coating team that focuses on garages, patios and interior floors for homes in and around Sun City.', image: 'crewPour', trail })}
+  ${intro({ kicker: 'About Us', h1: 'Floor coatings with patience, care and clear answers.', lead: 'We’re a West Valley floor coating team that focuses on garages, patios and interior floors for homes in and around Sun City.', image: 'crewPour', trail })}
   <section class="block">
     <div class="container about">
       <div class="copy">
@@ -39,7 +39,7 @@ export function renderAbout() {
       <aside class="about__aside reveal">
         <h2>Our services</h2>
         <ul>${services.map((s) => `<li><a href="/${s.slug}/">${s.name}</a></li>`).join('')}</ul>
-        <a class="button button--sage" href="/contact-us/">Request an estimate</a>
+        <a class="button button--sage" href="/contact/">Request an estimate</a>
       </aside>
     </div>
   </section>
@@ -59,24 +59,24 @@ const areaText = {
 };
 
 export function renderAreas() {
-  const trail = [{ name: 'Home', url: '/' }, { name: 'Service Areas', url: '/service-areas/' }];
+  const trail = [{ name: 'Home', url: '/' }, { name: 'Neighborhoods', url: '/neighborhoods/' }];
   const body = `<main id="content">
-  ${intro({ kicker: 'Service areas', h1: 'Proudly serving Sun City and the West Valley.', lead: 'We focus on Sun City and nearby communities so we can offer prompt estimates, convenient scheduling and attentive service.', image: 'roofsAerial', trail })}
+  ${intro({ kicker: 'Neighborhoods', h1: 'Proudly serving Sun City and the West Valley.', lead: 'We focus on Sun City and nearby communities so we can offer prompt estimates, convenient scheduling and attentive service.', image: 'roofsAerial', trail })}
   <section class="block">
     <div class="container">
       <div class="arealist">${areas.map((a) => `<article class="arealist__item reveal"><h2>${a.name}</h2><p>${esc(areaText[a.name])}</p></article>`).join('')}</div>
       <div class="copy narrow reveal" style="margin-top:56px">
         <h2>Not on the list?</h2>
-        <p>If your home or business is nearby but not listed, please get in touch. We regularly help customers just beyond these communities, especially for garage and commercial projects. Every service we offer — from <a href="/garage-floor-coatings/">garage coatings</a> and <a href="/patio-concrete-coatings/">patio coatings</a> to <a href="/commercial-epoxy-flooring/">commercial floors</a> — is available throughout our service area.</p>
+        <p>If your home or business is nearby but not listed, please get in touch. We regularly help customers just beyond these communities, especially for garage and commercial projects. Every service we offer — from <a href="/garage-floors/">garage coatings</a> and <a href="/patio-coatings/">patio coatings</a> to <a href="/business-floors/">commercial floors</a> — is available throughout our service area.</p>
       </div>
     </div>
   </section>
 </main>`;
-  return head({ title: 'Service Areas | Sun City Epoxy Flooring', description: 'Epoxy and concrete coatings in Sun City, Sun City West, Youngtown, Peoria, Surprise, El Mirage, west Glendale and the Arrowhead area.', path: '/service-areas/', schema: [businessSchema(), breadcrumbSchema(trail)] }) + header('areas') + body + footer();
+  return head({ title: 'Neighborhoods | Sun City Epoxy Flooring', description: 'Epoxy and concrete coatings in Sun City, Sun City West, Youngtown, Peoria, Surprise, El Mirage, west Glendale and the Arrowhead area.', path: '/neighborhoods/', schema: [businessSchema(), breadcrumbSchema(trail)] }) + header('areas') + body + footer();
 }
 
 export function renderContact() {
-  const trail = [{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact-us/' }];
+  const trail = [{ name: 'Home', url: '/' }, { name: 'Contact', url: '/contact/' }];
   const body = `<main id="content">
   <section class="page-top page-top--contact">
     <div class="container">
@@ -92,12 +92,12 @@ export function renderContact() {
       <div class="contact__side">
         <div class="infobox reveal"><h2>Call us</h2><p class="infobox__big"><a href="tel:${site.phone.tel}">${site.phone.display}</a></p><p>${site.hours}</p></div>
         <div class="infobox reveal"><h2>How it works</h2><ol><li>We call to confirm details and schedule a visit.</li><li>We meet at your home, look at the floor and show samples.</li><li>You receive a written estimate with no obligation.</li><li>If you’d like to go ahead, we schedule at your convenience.</li></ol></div>
-        <div class="infobox reveal"><h2>Where we work</h2><p>Sun City, Sun City West, Youngtown, Peoria, Surprise, El Mirage and nearby West Valley communities. <a href="/service-areas/">See service areas</a>.</p></div>
+        <div class="infobox reveal"><h2>Where we work</h2><p>Sun City, Sun City West, Youngtown, Peoria, Surprise, El Mirage and nearby West Valley communities. <a href="/neighborhoods/">See service areas</a>.</p></div>
       </div>
     </div>
   </section>
 </main>`;
-  return head({ title: 'Contact Us | Free Estimates | Sun City Epoxy Flooring', description: 'Request a free, no-obligation estimate for garage, patio, interior or commercial floor coatings in Sun City, AZ. We respond within one business day.', path: '/contact-us/', schema: [businessSchema(), breadcrumbSchema(trail)] }) + header('contact') + body + footer();
+  return head({ title: 'Contact Us | Free Estimates | Sun City Epoxy Flooring', description: 'Request a free, no-obligation estimate for garage, patio, interior or commercial floor coatings in Sun City, AZ. We respond within one business day.', path: '/contact/', schema: [businessSchema(), breadcrumbSchema(trail)] }) + header('contact') + body + footer();
 }
 
 export function renderPrivacy() {
@@ -113,7 +113,7 @@ export function renderPrivacy() {
   <h2>Third-party services</h2>
   <p>Our website uses Google Maps and Google Fonts, which may collect usage information under Google’s privacy policy. Form submissions are processed by our website host.</p>
   <h2>Questions</h2>
-  <p>If you’d like to review or delete what we hold, phone ${site.phone.display} or visit our <a href="/contact-us/">contact page</a>.</p>
+  <p>If you’d like to review or delete what we hold, phone ${site.phone.display} or visit our <a href="/contact/">contact page</a>.</p>
   </div></section></main>`;
   return head({ title: 'Privacy Policy | Sun City Epoxy Flooring', description: 'How Sun City Epoxy Flooring collects and uses information submitted through its website.', path: '/privacy-policy/' }) + header('') + body + footer();
 }
@@ -123,7 +123,7 @@ export function render404() {
   <p class="kicker">Page not found</p>
   <h1>Looks like this page wandered off the fairway.</h1>
   <p>We couldn’t find the page you were looking for. These links may help:</p>
-  <p><a class="button button--sage" href="/">Home</a> <a class="button button--outline" href="/contact-us/">Request an estimate</a></p>
+  <p><a class="button button--sage" href="/">Home</a> <a class="button button--outline" href="/contact/">Request an estimate</a></p>
   </div></section></main>`;
   return head({ title: 'Page Not Found | Sun City Epoxy Flooring', description: 'The page you requested could not be found.', path: '/404.html' }).replace('index,follow', 'noindex') + header('') + body + footer();
 }

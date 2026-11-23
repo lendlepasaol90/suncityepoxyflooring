@@ -79,31 +79,20 @@ export function header(active = '') {
           <div class="mega" id="mega"><ul class="mega__grid">${mega}</ul></div>
         </li>
         <li><a href="/about-us/"${cur('about')}>About Us</a></li>
-        <li><a href="/service-areas/"${cur('areas')}>Service Areas</a></li>
-        <li><a href="/contact-us/"${cur('contact')}>Contact</a></li>
+        <li><a href="/neighborhoods/"${cur('areas')}>Neighborhoods</a></li>
+        <li><a href="/contact/"${cur('contact')}>Contact</a></li>
       </ul>
     </nav>
-    <button type="button" class="button button--sage masthead__quote" aria-expanded="false" aria-controls="header-estimate" data-estimate-toggle>Free Estimate</button>
+    <a class="button button--sage masthead__quote" href="#__EST__">Free Estimate</a>
     <button type="button" class="burger" aria-expanded="false" aria-controls="drawer" data-burger><span></span><span class="visually-hidden">Open menu</span></button>
-  </div>
-  <div class="estimate-panel" id="header-estimate" data-estimate-panel>
-    <div class="container estimate-panel__inner">
-      <div class="estimate-panel__intro">
-        <p class="kicker">No-obligation estimate</p>
-        <p class="estimate-panel__head">Tell us a little about your floor.</p>
-        <p>We’ll call to set up a visit at a time that suits you — usually within one business day.</p>
-      </div>
-      ${leadForm({ id: 'hq', layout: 'row', cta: 'Send request' })}
-      <button type="button" class="estimate-panel__close" aria-label="Close estimate form" data-estimate-close>×</button>
-    </div>
   </div>
   <div class="drawer" id="drawer" data-drawer hidden>
     <ul>
       <li><a href="/">Home</a></li>
       ${services.map((s) => `<li><a href="/${s.slug}/">${s.name}</a></li>`).join('')}
       <li><a href="/about-us/">About Us</a></li>
-      <li><a href="/service-areas/">Service Areas</a></li>
-      <li><a href="/contact-us/">Contact</a></li>
+      <li><a href="/neighborhoods/">Neighborhoods</a></li>
+      <li><a href="/contact/">Contact</a></li>
     </ul>
     <a class="button button--sage" href="tel:${site.phone.tel}">Call ${site.phone.display}</a>
   </div>
@@ -128,7 +117,7 @@ export function footer() {
         <p class="footer__hours">${site.hours}</p>
       </div>
       <nav aria-label="Footer services"><h2>Services</h2><ul>${services.map((s) => `<li><a href="/${s.slug}/">${s.name}</a></li>`).join('')}</ul></nav>
-      <nav aria-label="Footer company"><h2>Company</h2><ul><li><a href="/about-us/">About Us</a></li><li><a href="/service-areas/">Service Areas</a></li><li><a href="/contact-us/">Contact</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li></ul>
+      <nav aria-label="Footer company"><h2>Company</h2><ul><li><a href="/about-us/">About Us</a></li><li><a href="/neighborhoods/">Neighborhoods</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li></ul>
         <h2>Communities</h2><p class="footer__areas">${areas.map((a) => a.name).join(', ')}</p></nav>
     </div>
   </div>

@@ -1,5 +1,5 @@
 export default {
-  slug: 'residential-epoxy-flooring',
+  slug: 'interior-floors',
   title: 'Residential Epoxy Flooring Sun City AZ | Laundry & Arizona Rooms',
   description: 'Seamless interior epoxy floors for Sun City homes — laundry rooms, Arizona rooms, entries, hobby rooms and casitas. Low-odor options and slip-resistant textures.',
   kicker: 'Residential epoxy flooring · Sun City, AZ',
@@ -106,6 +106,6 @@ export default {
     { q: 'Can you do just one room?', a: 'Absolutely. Many of our interior projects are single laundry rooms or entries.' },
     { q: "Will an interior coating affect my home\u2019s resale?", a: "A well-finished, durable floor in a laundry room, entry or Arizona room is generally seen as an upgrade over worn carpet or cracked tile. As with any finish, buyers\u2019 tastes vary, so we recommend timeless, neutral colors in shared living areas." },
   ],
-  related: ['decorative-flake-flooring', 'metallic-epoxy-flooring', 'patio-concrete-coatings'],
+  related: ['slip-resistant-flake-floors', 'metallic-floors', 'patio-coatings'],
   closing: { h2: 'Have a room that needs a better floor?', p: 'We’ll visit, check the slab and show you finishes that suit your home.' },
 };

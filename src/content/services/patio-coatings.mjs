@@ -1,5 +1,5 @@
 export default {
-  slug: 'patio-concrete-coatings',
+  slug: 'patio-coatings',
   title: 'Patio & Concrete Coatings Sun City AZ | Pool Decks & Walkways',
   description: 'Patio, pool deck, entry and walkway coatings in Sun City, AZ. Cooler-touch colors, slip-resistant textures and UV-stable finishes for outdoor living.',
   kicker: 'Patio & concrete coatings · Sun City, AZ',
@@ -118,6 +118,6 @@ export default {
     { q: 'Can you coat the front walkway too?', a: 'Yes. Walkways and front entries are popular additions, especially for the added footing a textured finish provides.' },
     { q: "Does the coating hold up to sprinkler overspray?", a: "Yes. The sealed surface resists hard-water staining, and mineral spots rinse away more easily than on bare concrete. Adjusting sprinkler heads to keep water off the patio also helps." },
   ],
-  related: ['decorative-flake-flooring', 'polyaspartic-floor-coatings', 'residential-epoxy-flooring'],
+  related: ['slip-resistant-flake-floors', 'one-day-floor-coatings', 'interior-floors'],
   closing: { h2: 'Ready to enjoy your patio again?', p: 'We’ll check the slab and drainage, and bring outdoor color samples to your home.' },
 };

@@ -14,15 +14,13 @@ export const site = {
 };
 
 export const services = [
-  { slug: 'garage-floor-coatings', name: 'Garage Floor Coatings', short: 'Garage Coatings', blurb: 'Clean, bright garage floors that handle cars, golf carts and the workbench without dusting or staining.', img: 'flakeGarage' },
-  { slug: 'residential-epoxy-flooring', name: 'Residential Epoxy Flooring', short: 'Residential Floors', blurb: 'Seamless, easy-care floors for laundry rooms, Arizona rooms, entries and hobby spaces.', img: 'laundry' },
-  { slug: 'decorative-flake-flooring', name: 'Decorative Flake Flooring', short: 'Decorative Flake', blurb: 'Speckled color blends with a gentle texture that disguises dust and adds sure footing.', img: 'flakeGrey' },
-  { slug: 'metallic-epoxy-flooring', name: 'Metallic Epoxy Flooring', short: 'Metallic Epoxy', blurb: 'Soft, pearly finishes with the look of stone for rooms you want to show off.', img: 'metalSilver' },
-  { slug: 'polyaspartic-floor-coatings', name: 'Polyaspartic Floor Coatings', short: 'Polyaspartic', blurb: 'Quick-curing, color-stable coatings that put your garage back in use within a day or two.', img: 'golfCart' },
-  { slug: 'polyurea-floor-coatings', name: 'Polyurea Floor Coatings', short: 'Polyurea', blurb: 'A resilient, tightly bonded base layer for older slabs and hard-working spaces.', img: 'garageStorage' },
-  { slug: 'patio-concrete-coatings', name: 'Patio & Concrete Coatings', short: 'Patio & Concrete', blurb: 'Cooler, slip-resistant finishes for patios, pool decks, entries and walkways.', img: 'patioGray' },
-  { slug: 'commercial-epoxy-flooring', name: 'Commercial Epoxy Flooring', short: 'Commercial', blurb: 'Hygienic, low-maintenance floors for clinics, clubhouses, shops and kitchens.', img: 'clinic' },
-  { slug: 'warehouse-floor-coatings', name: 'Warehouse Floor Coatings', short: 'Warehouse', blurb: 'Hard-wearing coatings and line striping for storage, maintenance and distribution space.', img: 'warehouseModern' },
+  { slug: 'garage-floors', name: 'Garage Floor Coatings', short: 'Garage Coatings', blurb: 'Clean, bright garage floors that handle cars, golf carts and the workbench without dusting or staining.', img: 'flakeGarage' },
+  { slug: 'interior-floors', name: 'Residential Epoxy Flooring', short: 'Residential Floors', blurb: 'Seamless, easy-care floors for laundry rooms, Arizona rooms, entries and hobby spaces.', img: 'laundry' },
+  { slug: 'slip-resistant-flake-floors', name: 'Decorative Flake Flooring', short: 'Decorative Flake', blurb: 'Speckled color blends with a gentle texture that disguises dust and adds sure footing.', img: 'flakeGrey' },
+  { slug: 'metallic-floors', name: 'Metallic Epoxy Flooring', short: 'Metallic Epoxy', blurb: 'Soft, pearly finishes with the look of stone for rooms you want to show off.', img: 'metalSilver' },
+  { slug: 'one-day-floor-coatings', name: 'Polyaspartic Floor Coatings', short: 'Polyaspartic', blurb: 'Quick-curing, color-stable coatings that put your garage back in use within a day or two.', img: 'golfCart' },
+  { slug: 'patio-coatings', name: 'Patio & Concrete Coatings', short: 'Patio & Concrete', blurb: 'Cooler, slip-resistant finishes for patios, pool decks, entries and walkways.', img: 'patioGray' },
+  { slug: 'business-floors', name: 'Commercial Epoxy Flooring', short: 'Commercial', blurb: 'Hygienic, low-maintenance floors for clinics, clubhouses, shops and kitchens.', img: 'clinic' },
 ];
 
 export const areas = [
