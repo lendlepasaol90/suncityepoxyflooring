@@ -1,5 +1,5 @@
 export default {
-  slug: 'decorative-flake-flooring',
+  slug: 'slip-resistant-flake-floors',
   title: 'Decorative Flake Flooring Sun City AZ | Chip Epoxy Floor Coatings',
   description: 'Decorative flake floors for Sun City garages, golf cart bays, laundry rooms and patios. Dozens of color blends, gentle texture and UV-stable topcoats. Free estimates.',
   kicker: 'Decorative flake flooring · Sun City, AZ',
@@ -123,6 +123,6 @@ export default {
     { q: "Can you coat just one bay of my garage?", a: "We can, but most people prefer the whole floor for a consistent look. If budget is a concern, we can discuss options such as partial coverage that keep costs down without a visible seam." },
     { q: "How thick is a flake floor?", a: "Thickness varies by system, but a full-broadcast flake floor is substantially thicker than paint or a DIY kit, which is a big part of why it lasts." },
   ],
-  related: ['garage-floor-coatings', 'polyaspartic-floor-coatings', 'residential-epoxy-flooring'],
+  related: ['garage-floors', 'one-day-floor-coatings', 'interior-floors'],
   closing: { h2: 'Let’s find the blend that suits your home.', p: 'We’ll bring sample boards in a range of colors so you can choose with confidence.' },
 };

@@ -79,7 +79,7 @@ export function renderService(c) {
     <div class="container panorama__inner">
       <h2 class="reveal">${esc(c.closing.h2)}</h2>
       <p class="reveal">${md(c.closing.p)}</p>
-      <div class="panorama__buttons reveal"><a class="button button--light" href="/contact-us/">Request an estimate</a><a class="button button--ghost" href="tel:${site.phone.tel}">Call ${site.phone.display}</a></div>
+      <div class="panorama__buttons reveal"><a class="button button--light" href="/contact/">Request an estimate</a><a class="button button--ghost" href="tel:${site.phone.tel}">Call ${site.phone.display}</a></div>
     </div>
   </section>
 </main>`;

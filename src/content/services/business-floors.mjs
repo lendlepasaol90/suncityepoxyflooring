@@ -1,5 +1,5 @@
 export default {
-  slug: 'commercial-epoxy-flooring',
+  slug: 'business-floors',
   title: 'Commercial Epoxy Flooring Sun City AZ | Clinics, Kitchens & Retail',
   description: 'Commercial epoxy flooring in Sun City, AZ for medical offices, clubhouses, restaurants, salons, retail and auto shops. Hygienic, slip-resistant, after-hours installs.',
   kicker: 'Commercial epoxy flooring · Sun City, AZ',
@@ -122,6 +122,6 @@ export default {
     { q: "Will the floor work with wheelchairs and walkers?", a: "Yes. Seamless coatings are smooth to roll across, and we detail transitions carefully. Texture levels can be adjusted so floors are secure without being difficult to roll on." },
     { q: "How do you handle odor in an occupied building?", a: "Where performance allows, we pick lower-odor materials, keep fresh air moving, and save the most aromatic stages for hours when nobody is in the building." },
   ],
-  related: ['warehouse-floor-coatings', 'metallic-epoxy-flooring', 'decorative-flake-flooring'],
+  related: ['metallic-floors', 'slip-resistant-flake-floors'],
   closing: { h2: 'Need a better floor for your business?', p: 'Let’s talk about your space and your schedule. We’ll recommend a system and a plan that works.' },
 };

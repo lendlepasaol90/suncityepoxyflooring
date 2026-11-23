@@ -1,5 +1,5 @@
 export default {
-  slug: 'polyaspartic-floor-coatings',
+  slug: 'one-day-floor-coatings',
   title: 'Polyaspartic Floor Coatings Sun City AZ | One-Day Garage Floors',
   description: 'Polyaspartic floor coatings in Sun City, AZ. One-day garage floors, UV-stable topcoats that won’t yellow, and fast return to use for garages, patios and entries.',
   kicker: 'Polyaspartic floor coatings · Sun City, AZ',
@@ -120,6 +120,6 @@ export default {
     { q: "Can you apply polyaspartic over my existing epoxy floor?", a: "Often, yes. If the existing coating is still firmly bonded, we clean and sand it, repair any damage and apply a fresh polyaspartic topcoat. Peeling or loose coatings need to be removed first." },
     { q: "Does polyaspartic work on golf cart bays?", a: "Very well. Its abrasion resistance handles the tight turns of cart tires, and it resists the chemicals that can drip from battery chargers." },
   ],
-  related: ['garage-floor-coatings', 'decorative-flake-flooring', 'polyurea-floor-coatings'],
+  related: ['garage-floors', 'slip-resistant-flake-floors'],
   closing: { h2: 'Want your garage back in a day?', p: 'Ask about our one-day polyaspartic systems during your free estimate.' },
 };

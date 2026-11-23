@@ -88,7 +88,7 @@ export function renderHome() {
         <h2>A garage floor that keeps up with the car, the cart and the workbench.</h2>
         <p>Many garages around here do double duty. One bay holds the car; the other is home to a golf cart, a charger, a second freezer and a row of storage cabinets. Bare concrete in that setup gets scuffed by cart tires, stained by drips and dusty no matter how often it is swept.</p>
         <p>A full-broadcast flake floor sealed with a polyaspartic topcoat solves most of that. The speckle camouflages dust, the surface offers steady footing, and the clear top layer shrugs off warm tires and stays color-true even where the late-day sun pours in. We can also coat the short stem walls so the whole space looks finished.</p>
-        <a class="textlink" href="/garage-floor-coatings/">More on garage floor coatings</a>
+        <a class="textlink" href="/garage-floors/">More on garage floor coatings</a>
       </div>
     </div>
   </section>
@@ -107,7 +107,7 @@ export function renderHome() {
           <p>In the cooler months, the patio becomes an extra living room. But sun-faded, cracked or stained concrete can make it feel neglected. A coating gives the slab a fresh, even finish in a color that complements your stucco and furniture, and it seals out grill grease, leaf stains and hard-water marks from the sprinklers.</p>
           <p>Outdoors we choose UV-stable materials that won’t yellow, and we build texture into the top layer so the surface grips when it is wet from pool splash or a monsoon shower. Lighter shades stay more comfortable underfoot in the heat. We also pay attention to the joints and edges, so the coating looks clean where it meets the house, the lawn or the pool coping.</p>
         </div>
-        <a class="textlink reveal" href="/patio-concrete-coatings/">Patio &amp; concrete coatings</a>
+        <a class="textlink reveal" href="/patio-coatings/">Patio &amp; concrete coatings</a>
       </div>
     </div>
   </section>
@@ -128,15 +128,15 @@ export function renderHome() {
         </div>
         <div class="tabs__panel" role="tabpanel" id="p-flake" aria-labelledby="t-flake">
           <figure>${img('flakeGrey', { sizes: '(max-width: 900px) 94vw, 46vw' })}</figure>
-          <div><h3>Decorative flake flooring</h3><p>Colored vinyl flakes are scattered into the base coat and sealed under a clear topcoat. The speckled finish hides dust and small marks remarkably well, and the subtle texture adds grip. Blends range from quiet grays and taupes to warmer mixes that echo desert landscaping. It is our most popular finish for garages and works beautifully in laundry rooms and workshops too.</p><a class="textlink" href="/decorative-flake-flooring/">Flake colors and options</a></div>
+          <div><h3>Decorative flake flooring</h3><p>Colored vinyl flakes are scattered into the base coat and sealed under a clear topcoat. The speckled finish hides dust and small marks remarkably well, and the subtle texture adds grip. Blends range from quiet grays and taupes to warmer mixes that echo desert landscaping. It is our most popular finish for garages and works beautifully in laundry rooms and workshops too.</p><a class="textlink" href="/slip-resistant-flake-floors/">Flake colors and options</a></div>
         </div>
         <div class="tabs__panel" role="tabpanel" id="p-solid" aria-labelledby="t-solid" hidden>
           <figure>${img('laundry', { sizes: '(max-width: 900px) 94vw, 46vw' })}</figure>
-          <div><h3>Residential epoxy flooring</h3><p>A single, seamless color with a satin or gloss sheen gives interior rooms a clean, finished look with no grout lines to scrub. It suits laundry rooms, mudrooms, craft rooms and Arizona rooms where you want a durable floor that looks calm rather than busy. A whisper of grit can be mixed in for traction, and a short coved edge along the walls makes mopping corners effortless.</p><a class="textlink" href="/residential-epoxy-flooring/">Interior floor coatings</a></div>
+          <div><h3>Residential epoxy flooring</h3><p>A single, seamless color with a satin or gloss sheen gives interior rooms a clean, finished look with no grout lines to scrub. It suits laundry rooms, mudrooms, craft rooms and Arizona rooms where you want a durable floor that looks calm rather than busy. A whisper of grit can be mixed in for traction, and a short coved edge along the walls makes mopping corners effortless.</p><a class="textlink" href="/interior-floors/">Interior floor coatings</a></div>
         </div>
         <div class="tabs__panel" role="tabpanel" id="p-metal" aria-labelledby="t-metal" hidden>
           <figure>${img('metalSilver', { sizes: '(max-width: 900px) 94vw, 46vw' })}</figure>
-          <div><h3>Metallic epoxy flooring</h3><p>Pearlescent pigments are worked by hand into the wet resin, creating soft, flowing patterns that resemble marble or polished stone. Every floor is one of a kind. They make a beautiful statement in a den, foyer, bar nook or craft room, and a satin top layer keeps reflections gentle.</p><a class="textlink" href="/metallic-epoxy-flooring/">Metallic finishes</a></div>
+          <div><h3>Metallic epoxy flooring</h3><p>Pearlescent pigments are worked by hand into the wet resin, creating soft, flowing patterns that resemble marble or polished stone. Every floor is one of a kind. They make a beautiful statement in a den, foyer, bar nook or craft room, and a satin top layer keeps reflections gentle.</p><a class="textlink" href="/metallic-floors/">Metallic finishes</a></div>
         </div>
       </div>
     </div>
@@ -219,13 +219,13 @@ export function renderHome() {
           <figure>${img('clinic', { sizes: '(max-width: 760px) 94vw, 46vw' })}</figure>
           <h3>Commercial epoxy flooring</h3>
           <p>Medical and dental offices, salons, restaurants, clubhouse kitchens and retail shops all need floors that are hygienic, slip-resistant and quick to clean. Seamless coatings with optional cove bases leave no grout for grime to collect in, and we schedule work for evenings or weekends so you can stay open.</p>
-          <a class="textlink" href="/commercial-epoxy-flooring/">Commercial flooring</a>
+          <a class="textlink" href="/business-floors/">Commercial flooring</a>
         </article>
         <article class="duo__item reveal">
           <figure>${img('warehouseModern', { sizes: '(max-width: 760px) 94vw, 46vw' })}</figure>
           <h3>Warehouse &amp; industrial coatings</h3>
           <p>Storage buildings, maintenance shops and distribution spaces along the Grand Avenue corridor and Loop 101 need floors that resist forklift wear, stop dusting and hold clear safety striping. We plan the work in phases around your operations and build heavier systems where the traffic demands it.</p>
-          <a class="textlink" href="/warehouse-floor-coatings/">Warehouse coatings</a>
+          Warehouse coatings
         </article>
       </div>
     </div>
@@ -275,10 +275,10 @@ export function renderHome() {
   <section class="block block--tint">
     <div class="container areas">
       <div>
-        <p class="kicker reveal">Service areas</p>
+        <p class="kicker reveal">Neighborhoods</p>
         <h2 class="reveal">Serving Sun City and neighboring West Valley communities.</h2>
         <p class="reveal">We’re focused on Sun City and the communities around it, which means shorter drive times and easier scheduling for you. If you’re just outside the list below, please ask — we can often help.</p>
-        <a class="textlink reveal" href="/service-areas/">All service areas</a>
+        <a class="textlink reveal" href="/neighborhoods/">All service areas</a>
       </div>
       <ul class="areas__list">${areas.map((a) => `<li class="reveal"><span>${a.name}</span><small>${esc(a.note)}</small></li>`).join('')}</ul>
     </div>
