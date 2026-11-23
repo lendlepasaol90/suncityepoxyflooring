@@ -136,6 +136,7 @@ export function footer() {
 </footer>
 <a class="mobile-call" href="tel:${site.phone.tel}">Call for a free estimate</a>
 <script src="/assets/js/site.js?v=1" defer></script>
+<script src="/assets/js/formsubmit.js" data-site="Sun City Epoxy Flooring" defer></script>
 </body>
 </html>`;
 }
