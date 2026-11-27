@@ -68,7 +68,7 @@ export function renderHome() {
         <input class="ba__range" type="range" min="0" max="100" step="1" value="50" aria-label="Before and after comparison: move left to see more of the coated driveway, right to see more of the original concrete" data-ba-range>
       </div>
       <dl class="ba__notes">
-        <div class="reveal"><dt>Before</dt><dd>Bare, sun-bleached concrete. Joints, tire marks and old stains show from the street, and anything that spills soaks straight in.</dd></div>
+        <div class="reveal"><dt>Before</dt><dd>Bare, unsealed concrete. It looks plain from the street, and because the surface is porous, anything that spills soaks straight in.</dd></div>
         <div class="reveal"><dt>After</dt><dd>A gray flake coating under a glossy, sealed topcoat. The color is even from the garage door to the sidewalk, spills stay on the surface, and the front of the home looks freshly kept.</dd></div>
       </dl>
     </div>
