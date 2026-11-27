@@ -111,7 +111,7 @@ export function header(active = '') {
 }
 
 export function footer() {
-  const map = `https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&z=12&output=embed`;
+  const map = `https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&z=14&output=embed`;
   return `<footer class="footer">
   <div class="container footer__cta">
     <p class="footer__cta-text">Questions about a floor? We’re happy to talk it through.</p>
@@ -126,6 +126,7 @@ export function footer() {
         <a class="brand brand--footer" href="/"><span class="brand__logo" aria-hidden="true">LOGO</span><span class="brand__name">Sun City<b>Epoxy Flooring</b></span></a>
         <p>Garage, patio and interior floor coatings for Sun City, Sun City West and nearby West Valley communities.</p>
         <p class="footer__hours">${site.hours}</p>
+        <address class="footer__addr">${esc(site.address.street)}<br>${site.address.city}, ${site.address.state} ${site.address.zip}<br><a href="tel:${site.phone.tel}">${site.phone.display}</a><br><a href="mailto:${site.email}">${site.email}</a></address>
       </div>
       <nav aria-label="Footer services"><h2>Services</h2><ul>${services.map((s) => `<li><a href="/${s.slug}/">${s.name}</a></li>`).join('')}</ul></nav>
       <nav aria-label="Footer company"><h2>Company</h2><ul><li><a href="/about-us/">About Us</a></li><li><a href="/service-areas/">Service Areas</a></li><li><a href="/contact-us/">Contact</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li></ul>
@@ -150,8 +151,11 @@ export function businessSchema() {
     name: site.name,
     url: `${site.domain}/`,
     image: site.domain + site.ogImage,
-    description: 'Garage, patio, residential and commercial epoxy floor coatings serving Sun City, Arizona and nearby West Valley communities.',
-    address: { '@type': 'PostalAddress', addressLocality: 'Sun City', addressRegion: 'AZ', addressCountry: 'US' },
+    description: site.description,
+    email: site.email,
+    founder: { '@type': 'Person', name: site.owner },
+    address: { '@type': 'PostalAddress', streetAddress: site.address.street, addressLocality: site.address.city, addressRegion: site.address.state, postalCode: site.address.zip, addressCountry: 'US' },
+    openingHoursSpecification: [{ '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], opens: '07:00', closes: '18:00' }],
     geo: { '@type': 'GeoCoordinates', latitude: site.geo.lat, longitude: site.geo.lng },
     areaServed: areas.map((a) => ({ '@type': 'Place', name: `${a.name.replace(' (west)', '')}, AZ` })),
     hasOfferCatalog: { '@type': 'OfferCatalog', name: 'Floor coating services', itemListElement: services.map((s) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name: s.name, url: `${site.domain}/${s.slug}/` } })) },

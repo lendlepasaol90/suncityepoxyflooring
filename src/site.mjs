@@ -1,15 +1,18 @@
 // Site-wide configuration for Sun City Epoxy Flooring.
-// PHONE: replace the placeholder below once the business line is live.
 export const site = {
   name: 'Sun City Epoxy Flooring',
   domain: 'https://suncityepoxyflooring.com',
   city: 'Sun City',
   state: 'AZ',
   county: 'Maricopa County',
-  phone: { display: '(623) 000-0000', tel: '+16230000000', placeholder: true },
+  phone: { display: '(623) 462-2370', tel: '+16234622370', placeholder: false },
+  email: 'info@suncityepoxyflooring.com',
+  owner: 'Josh Tabot',
+  address: { street: '18900 N 107th Ave #150A', city: 'Sun City', state: 'AZ', zip: '85373' },
+  description: 'Sun City Epoxy Flooring helps homeowners and businesses throughout Sun City, AZ, and the West Valley transform worn concrete into attractive, durable, easy-to-maintain surfaces. We specialize in garage floor coatings, golf cart garage flooring, patio and pool deck coatings, residential epoxy flooring, and commercial concrete coatings. Our flooring options include decorative flake, metallic epoxy, polyaspartic, and polyurea systems selected for Arizona’s desert climate. From repairing aging concrete to installing textured, stain-resistant finishes, we emphasize thorough surface preparation, quality workmanship, and minimal disruption to your daily routine. Let us help you create a beautiful, functional floor.',
   geo: { lat: 33.5975, lng: -112.2718 },
-  mapQuery: 'Sun City, AZ 85351',
-  hours: 'Monday–Saturday · 7:00am–5:00pm',
+  mapQuery: '18900 N 107th Ave #150A, Sun City, AZ 85373',
+  hours: 'Monday–Saturday · 7:00am–6:00pm · Sunday closed',
   ogImage: '/images/hero/golf-course-homes-with-mountain-view-1200.webp',
 };
 

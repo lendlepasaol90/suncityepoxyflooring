@@ -21,6 +21,9 @@ export function renderAbout() {
   <section class="block">
     <div class="container about">
       <div class="copy">
+        <h2 class="reveal">About ${esc(site.name)}</h2>
+        <p class="reveal">${esc(site.description)}</p>
+        <p class="reveal">${esc(site.name)} is owned and operated by ${esc(site.owner)}.</p>
         <h2 class="reveal">Our approach</h2>
         <p class="reveal">We believe a good floor starts long before the first coat goes down. It starts with listening — understanding how you use the space, what bothers you about the current floor and what you’d like it to become. Then it’s a matter of looking honestly at the concrete, choosing the right materials and doing the preparation properly.</p>
         <p class="reveal">That approach suits the homes in this area. Many slabs here have decades of history, and a quick paint job simply won’t last on them. We take the time to grind away old finishes, repair the cracks that years of desert summers create, and test for moisture before recommending a system. It’s not the fastest way to quote a floor, but it’s the way to build one that lasts.</p>
@@ -90,7 +93,8 @@ export function renderContact() {
     <div class="container contact">
       <div class="reveal">${leadForm({ id: 'contact', title: 'Request a free estimate', note: 'All fields are required except the message.', details: true, cta: 'Send my request' })}</div>
       <div class="contact__side">
-        <div class="infobox reveal"><h2>Call us</h2><p class="infobox__big"><a href="tel:${site.phone.tel}">${site.phone.display}</a></p><p>${site.hours}</p></div>
+        <div class="infobox reveal"><h2>Call us</h2><p class="infobox__big"><a href="tel:${site.phone.tel}">${site.phone.display}</a></p><p>Monday – Saturday: 7am – 6pm<br>Sunday: Closed</p></div>
+        <div class="infobox reveal"><h2>Visit or email</h2><address>${esc(site.address.street)}<br>${site.address.city}, ${site.address.state} ${site.address.zip}</address><p><a href="mailto:${site.email}">${site.email}</a></p></div>
         <div class="infobox reveal"><h2>How it works</h2><ol><li>We call to confirm details and schedule a visit.</li><li>We meet at your home, look at the floor and show samples.</li><li>You receive a written estimate with no obligation.</li><li>If you’d like to go ahead, we schedule at your convenience.</li></ol></div>
         <div class="infobox reveal"><h2>Where we work</h2><p>Sun City, Sun City West, Youngtown, Peoria, Surprise, El Mirage and nearby West Valley communities. <a href="/service-areas/">See service areas</a>.</p></div>
       </div>
@@ -113,7 +117,7 @@ export function renderPrivacy() {
   <h2>Third-party services</h2>
   <p>Our website uses Google Maps and Google Fonts, which may collect usage information under Google’s privacy policy. Form submissions are processed by our website host.</p>
   <h2>Questions</h2>
-  <p>If you’d like to review or delete what we hold, phone ${site.phone.display} or visit our <a href="/contact-us/">contact page</a>.</p>
+  <p>If you’d like to review or delete what we hold, phone ${site.phone.display}, email <a href="mailto:${site.email}">${site.email}</a> or visit our <a href="/contact-us/">contact page</a>.</p>
   </div></section></main>`;
   return head({ title: 'Privacy Policy | Sun City Epoxy Flooring', description: 'How Sun City Epoxy Flooring collects and uses information submitted through its website.', path: '/privacy-policy/' }) + header('') + body + footer();
 }

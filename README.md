@@ -31,7 +31,7 @@ No dependencies are required to build (Node 18+). Deploying needs `wrangler` (fe
 
 ## Before launch
 
-1. **Phone number** — replace the placeholder in `src/site.mjs` (`phone.display`, `phone.tel`) and set `placeholder: false` so it is added to the LocalBusiness schema. Then `npm run build`.
+1. **Business details** — phone, email, address, hours and owner are set in `src/site.mjs`. Run `npm run build` after changing them.
 2. **Logo** — replace the `.brand__logo` placeholder in `src/layout.mjs` with an `<img>` (the circular slot is 52×52 next to the wordmark; a wide logo up to ~240×56 also fits).
 3. **Lead delivery** — set one of these on the Worker (Settings → Variables & Secrets):
    - `LEAD_WEBHOOK_URL` — any HTTPS endpoint that accepts JSON (Zapier, Make, n8n, CRM webhook), or

@@ -430,6 +430,8 @@ p { margin: 0 0 1.05em; }
 .infobox h2 { font-size: 1.35rem; }
 .infobox ol { padding-left: 20px; margin: 0; display: grid; gap: 6px; }
 .infobox p:last-child { margin: 0; }
+.infobox address { font-style: normal; margin-bottom: 0.6em; }
+.footer__addr { font-style: normal; margin-top: 12px; line-height: 1.7; font-size: 0.95rem; }
 .infobox__big a { font-family: var(--serif); font-size: 1.9rem; color: var(--olive-900); text-decoration: none; }
 .notfound .button { margin: 6px 8px 0 0; }
 
