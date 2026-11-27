@@ -119,6 +119,23 @@
     n && n.addEventListener('click', function () { step(1); });
   }
 
+  /* Before / after slider */
+  $$('[data-ba]').forEach(function (ba) {
+    var range = $('[data-ba-range]', ba), dragging = false;
+    var set = function (v) { v = Math.max(0, Math.min(100, v)); ba.style.setProperty('--pos', v + '%'); if (range) range.value = Math.round(v); };
+    var fromEvent = function (e) { var r = ba.getBoundingClientRect(); set((e.clientX - r.left) / r.width * 100); };
+    ba.addEventListener('pointerdown', function (e) {
+      if (e.button) return;
+      dragging = true; ba.classList.add('is-dragging');
+      try { ba.setPointerCapture(e.pointerId); } catch (err) {}
+      fromEvent(e);
+    });
+    ba.addEventListener('pointermove', function (e) { if (dragging) fromEvent(e); });
+    var stop = function () { dragging = false; ba.classList.remove('is-dragging'); };
+    ba.addEventListener('pointerup', stop); ba.addEventListener('pointercancel', stop);
+    range && range.addEventListener('input', function () { set(+range.value); });
+  });
+
   /* Reveal animations */
   var targets = $$('.reveal, .img-reveal');
   if (reduced || !('IntersectionObserver' in window)) targets.forEach(function (t) { t.classList.add('is-in'); });

@@ -334,5 +334,29 @@
   "w": 1600,
   "h": 1067,
   "alt": "Bright modern warehouse with a smooth coated floor"
+ },
+ "drivewayBefore": {
+  "base": "/images/before-after/driveway-before-plain-concrete",
+  "widths": [
+   480,
+   800,
+   1200,
+   1400
+  ],
+  "w": 1400,
+  "h": 731,
+  "alt": "Before: single-level home with a plain, sun-faded concrete driveway"
+ },
+ "drivewayAfter": {
+  "base": "/images/before-after/driveway-after-gray-flake-coating",
+  "widths": [
+   480,
+   800,
+   1200,
+   1600
+  ],
+  "w": 1600,
+  "h": 836,
+  "alt": "After: the same driveway with a glossy gray flake coating"
  }
 }
